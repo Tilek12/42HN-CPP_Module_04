@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/05 10:31:20 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/05 12:34:18 by tkubanyc         ###   ########.fr       */
+/*   Created: 2024/12/05 17:00:30 by tkubanyc          #+#    #+#             */
+/*   Updated: 2024/12/05 17:01:51 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ANIMAL_HPP
-# define ANIMAL_HPP
+#ifndef WRONGANIMAL_HPP
+# define WRONGANIMAL_HPP
 
 # include <string>
 # include <iostream>
 # include "colors.hpp"
 
-class Animal {
+class WrongAnimal {
 
 protected:
 
@@ -25,13 +25,13 @@ protected:
 
 public:
 
-	Animal( void );
-	Animal( const Animal& other );
-	Animal&	operator=( const Animal& other );
-	virtual	~Animal( void );
+	WrongAnimal( void );
+	WrongAnimal( const WrongAnimal& other );
+	WrongAnimal&	operator=( const WrongAnimal& other );
+	virtual	~WrongAnimal( void );
 
 	std::string		getType( void ) const;
-	virtual void	makeSound( void ) const;
+	void			makeSound( void ) const;
 
 };
 
