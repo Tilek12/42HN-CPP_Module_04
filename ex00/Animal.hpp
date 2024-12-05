@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 10:31:20 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/05 10:39:40 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/05 10:41:58 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ class Animal {
 
 protected:
 
-	std::string	type;
+	std::string	_type;
 
 public:
 
