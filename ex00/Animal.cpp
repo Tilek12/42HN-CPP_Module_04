@@ -6,13 +6,13 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 10:41:06 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/05 10:53:41 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/05 11:58:11 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
 
-Animal::Animal( const std::string type ) : _type( type ) {
+Animal::Animal( void ) : _type( "Animal" ) {
 	std::cout << "Animal class Constructor called." << std::endl;
 }
 
@@ -34,6 +34,10 @@ Animal::~Animal( void ) {
 	std::cout << "Animal class Destructor called." << std::endl;
 }
 
-void	Animal::makeSound( void ) {
+std::string	Animal::getType( void ) const {
+	return _type;
+}
+
+void	Animal::makeSound( void ) const {
 	std::cout << "Make some noise, Animal..." << std::endl;
 }

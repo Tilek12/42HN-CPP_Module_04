@@ -1,37 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/05 10:31:20 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/05 11:53:56 by tkubanyc         ###   ########.fr       */
+/*   Created: 2024/12/05 11:34:43 by tkubanyc          #+#    #+#             */
+/*   Updated: 2024/12/05 12:01:13 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ANIMAL_HPP
-# define ANIMAL_HPP
+#ifndef DOG_HPP
+# define DOF_HPP
 
-# include <string>
-# include <iostream>
-# include "colors.hpp"
+# include "Animal.hpp"
 
-class Animal {
-
-protected:
-
-	std::string	_type;
+class	Dog : public Animal {
 
 public:
 
-	Animal( void );
-	Animal( const Animal& other );
-	Animal&	operator=( const Animal& other );
-	~Animal( void );
+	Dog( void );
+	Dog( const Dog& other );
+	Dog&	operator=( const Dog& other );
+	~Dog( void );
 
-	std::string		getType( void ) const;
-	virtual void	makeSound( void ) const;
+	void	makeSound( void ) const override;
 
 };
 
