@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 10:41:06 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/05 11:58:11 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/05 12:09:34 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ Animal&	Animal::operator=( const Animal& other ) {
 
 	if ( this != &other ) {
 		_type = other._type;
+		std::cout << "Animal class Copy Assignment operator called." << std::endl;
 	}
 
-	std::cout << "Animal class Copy Assignment operator called." << std::endl;
 	return *this;
 }
 
