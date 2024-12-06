@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 12:19:16 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/05 12:24:39 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/06 15:09:59 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,29 +15,27 @@
 Cat::Cat( void ) {
 
 	_type = "Cat";
-	std::cout << "Cat class Constructor called." << std::endl;
+	print( "Cat class Constructor called.", CYAN );
 }
 
-Cat::Cat( const Cat& other ) {
-
-	_type = other._type;
-	std::cout << "Cat class Copy Constructor called." << std::endl;
+Cat::Cat( const Cat& other ) : Animal( other ) {
+	print( "Cat class Copy Constructor called.", CYAN );
 }
 
 Cat&	Cat::operator=( const Cat& other ) {
 
 	if ( this != &other ) {
-		_type = other._type;
-		std::cout << "Cat class Copy Assignment operator called." << std::endl;
+		Animal::operator=( other );
+		print( "Cat class Copy Assignment operator called.", CYAN );
 	}
 
 	return *this;
 }
 
 Cat::~Cat( void ) {
-	std::cout << "Cat class Destructor called." << std::endl;
+	print( "Cat class Destructor called.", CYAN );
 }
 
 void	Cat::makeSound( void ) const {
-	std::cout << "Meow!" << std::endl;
+	print( "Meow!", B_CYAN );
 }

@@ -5,7 +5,12 @@ RESET	= \033[0m
 
 # Variables
 NAME = animal
-SRC = main.cpp
+SRC =	main.cpp \
+		Animal.cpp \
+		Dog.cpp \
+		Cat.cpp \
+		WrongAnimal.cpp \
+		WrongCat.cpp
 OBJ = $(SRC:.cpp=.o)
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++17

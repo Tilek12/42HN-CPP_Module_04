@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 10:31:20 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/05 12:34:18 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/06 14:55:16 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ public:
 
 	std::string		getType( void ) const;
 	virtual void	makeSound( void ) const;
+	void			print( std::string message, std::string msgColor ) const;
 
 };
 

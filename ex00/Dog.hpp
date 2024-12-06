@@ -6,12 +6,12 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 11:34:43 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/05 12:01:13 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/06 14:43:17 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef DOG_HPP
-# define DOF_HPP
+# define DOG_HPP
 
 # include "Animal.hpp"
 

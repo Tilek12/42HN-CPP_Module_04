@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 17:12:22 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/05 17:15:29 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/06 15:08:10 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,29 +15,27 @@
 WrongCat::WrongCat( void ) {
 
 	_type = "WrongCat";
-	std::cout << "WrongCat class Constructor called." << std::endl;
+	print( "WrongCat class Constructor called.", PURPLE );
 }
 
-WrongCat::WrongCat( const WrongCat& other ) {
-
-	_type = other._type;
-	std::cout << "WrongCat class Copy Constructor called." << std::endl;
+WrongCat::WrongCat( const WrongCat& other ) : WrongAnimal( other ) {
+	print( "WrongCat class Copy Constructor called.", PURPLE );
 }
 
 WrongCat&	WrongCat::operator=( const WrongCat& other ) {
 
 	if ( this != &other ) {
-		_type = other._type;
-		std::cout << "WrongCat class Copy Assignment operator called." << std::endl;
+		WrongAnimal::operator=( other );
+		print( "WrongCat class Copy Assignment operator called.", PURPLE );
 	}
 
 	return *this;
 }
 
 WrongCat::~WrongCat( void ) {
-	std::cout << "WrongCat class Destructor called." << std::endl;
+	print( "WrongCat class Destructor called.", PURPLE );
 }
 
 void	WrongCat::makeSound( void ) const {
-	std::cout << "Undefined sound from WrongCat..." << std::endl;
+	print( "* Undefined sound from WrongCat... *", B_PURPLE );
 }

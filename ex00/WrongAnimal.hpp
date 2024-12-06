@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 17:00:30 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/05 17:01:51 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/06 14:57:37 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,11 @@ public:
 	WrongAnimal( void );
 	WrongAnimal( const WrongAnimal& other );
 	WrongAnimal&	operator=( const WrongAnimal& other );
-	virtual	~WrongAnimal( void );
+	~WrongAnimal( void );
 
 	std::string		getType( void ) const;
 	void			makeSound( void ) const;
+	void			print( std::string message, std::string msgColor ) const;
 
 };
 
