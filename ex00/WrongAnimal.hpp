@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 17:00:30 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/06 14:57:37 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/06 16:09:14 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,9 @@
 # include <iostream>
 # include "colors.hpp"
 
+/*----------------------------*/
+/*  Define WrongAnimal class  */
+/*----------------------------*/
 class WrongAnimal {
 
 protected:

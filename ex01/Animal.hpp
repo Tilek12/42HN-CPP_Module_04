@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 10:31:20 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/06 14:55:16 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/06 15:57:35 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,9 @@
 # include <iostream>
 # include "colors.hpp"
 
+/*-----------------------*/
+/*  Define Animal class  */
+/*-----------------------*/
 class Animal {
 
 protected:

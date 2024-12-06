@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 12:14:42 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/05 12:18:10 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/06 16:09:18 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,9 @@
 
 # include "Animal.hpp"
 
+/*--------------------*/
+/*  Define Cat class  */
+/*--------------------*/
 class	Cat : public Animal {
 
 public:

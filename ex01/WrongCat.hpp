@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 17:10:31 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/06 12:16:35 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/06 16:09:11 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,9 @@
 
 # include "WrongAnimal.hpp"
 
+/*-------------------------*/
+/*  Define WrongCat class  */
+/*-------------------------*/
 class	WrongCat : public WrongAnimal {
 
 public:
