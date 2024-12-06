@@ -6,15 +6,14 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/06 15:32:05 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/06 16:20:33 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/06 19:03:09 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef BRAIN_HPP
 # define BRAIN_HPP
 
-# include <string>
-# include <iostream>
+# include "utils.hpp"
 
 /*----------------------*/
 /*  Define Brain class  */

@@ -6,16 +6,14 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 17:00:30 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/06 16:09:14 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/06 19:10:27 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef WRONGANIMAL_HPP
 # define WRONGANIMAL_HPP
 
-# include <string>
-# include <iostream>
-# include "colors.hpp"
+# include "utils.hpp"
 
 /*----------------------------*/
 /*  Define WrongAnimal class  */
@@ -35,7 +33,6 @@ public:
 
 	std::string		getType( void ) const;
 	void			makeSound( void ) const;
-	void			print( std::string message, std::string msgColor ) const;
 
 };
 

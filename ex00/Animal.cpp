@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 10:41:06 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/06 16:09:08 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/06 19:09:52 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,11 +58,4 @@ std::string	Animal::getType( void ) const {
 /*-----------------------------*/
 void	Animal::makeSound( void ) const {
 	print( "* Some sound from Animal *", YELLOW );
-}
-
-/*-------------------------*/
-/*  Define print function  */
-/*-------------------------*/
-void	Animal::print( std::string message, std::string msgColor ) const {
-	std::cout << msgColor << message << RESET << std::endl;
 }

@@ -11,7 +11,8 @@ SRC =	main.cpp \
 		Cat.cpp \
 		WrongAnimal.cpp \
 		WrongCat.cpp \
-		Brain.cpp
+		Brain.cpp \
+		utils.cpp
 OBJ = $(SRC:.cpp=.o)
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++17

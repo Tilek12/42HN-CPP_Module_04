@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 17:17:48 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/06 15:18:55 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/06 19:26:17 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 int	main( void ) {
 
 	std::cout << B_BLACK
-			  << "\n------------Tests for Usual Animals------------\n\n"
+			  << "\n--- Tests for Animals: Dog and Cat ---\n\n"
 			  << RESET;
 
 	const Animal*	animal = new Animal();
@@ -40,24 +40,41 @@ int	main( void ) {
 	delete cat;
 
 	std::cout << B_BLACK
-			  << "\n------------Tests for Wrong Animals------------\n\n"
+			  << "\n----- Tests for array of Animals -----\n\n"
 			  << RESET;
 
-	const WrongAnimal*	wrongAnimal = new WrongAnimal();
-	const WrongCat*		wrongCat = new WrongCat();
+	Animal*	animals[4];
 
-	std::cout << B_WHITE
-			  << "What the weird Animal is this???\n"
-			  << wrongAnimal->getType() << ": "
+	for ( int i = 0; i < 2; i++ ) {
+		animals[i] = new Dog();
+	}
+
+	for (int i = 2; i < 4; i++ ) {
+		animals[i] = new Cat();
+	}
+
+	for ( int i = 0; i < 4; i++ ) {
+		delete animals[i];
+	}
+
+	std::cout << B_BLACK
+			  << "\n---------- Tests for Ideas ----------\n\n"
 			  << RESET;
 
-	wrongAnimal->makeSound();
+	Dog originalDog;
+	originalDog.setIdea(0, "Chase the ball");
+	Dog copiedDog(originalDog);
+	std::cout << "Original Dog Idea: "
+			  << B_WHITE << originalDog.getIdea(0) << RESET << std::endl;
+	std::cout << "Copied Dog Idea: "
+			  << B_WHITE << copiedDog.getIdea(0) << RESET << std::endl;
 
-	std::cout << B_WHITE << wrongCat->getType() << ": " << RESET;
-	wrongCat->makeSound();
-
-	delete wrongAnimal;
-	delete wrongCat;
+	copiedDog.setIdea(0, "Guard the house");
+	std::cout << "After modifying\n";
+	std::cout << "Original Dog Idea: "
+			  << B_WHITE << originalDog.getIdea(0) << RESET << std::endl;
+	std::cout << "Copied Dog Idea: "
+			  << B_WHITE << copiedDog.getIdea(0) << RESET << std::endl;
 
 	return 0;
 }

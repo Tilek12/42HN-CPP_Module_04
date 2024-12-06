@@ -1,20 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   colors.hpp                                         :+:      :+:    :+:   */
+/*   utils.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 11:44:14 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/05 10:58:03 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/06 19:00:41 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef COLORS_HPP
-#define COLORS_HPP
+#ifndef UTILS_HPP
+# define UTILS_HPP
 
-#include <string>
+# include <string>
+# include <iostream>
 
+/*---------------*/
+/*  Text colors  */
+/*---------------*/
 // Colors
 const std::string BLACK		= "\033[0;30m";
 const std::string RED		= "\033[0;31m";
@@ -37,5 +41,10 @@ const std::string B_WHITE	= "\033[1;37m";
 
 // Reset code
 const std::string RESET		= "\033[0m";
+
+/*-------------*/
+/*  Functions  */
+/*-------------*/
+void	print( const std::string& message, const std::string& msgColor );
 
 #endif

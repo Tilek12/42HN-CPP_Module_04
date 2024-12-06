@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/06 15:39:12 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/06 16:20:52 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/06 19:05:54 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ Brain::Brain( void ) {
 		_ideas[i] = "some idea";
 	}
 
-	std::cout << "Brain class Constructor called.\n";
+	print( "Brain class Constructor called.", PURPLE );
 }
 
 /*--------------------------------*/
@@ -33,7 +33,7 @@ Brain::Brain( const Brain& other ) {
 		_ideas[i] = other._ideas[i];
 	}
 
-	std::cout << "Brain class Copy Constructor called.\n";
+	print( "Brain class Copy Constructor called.", PURPLE );
 }
 
 /*----------------------------------------*/
@@ -45,7 +45,7 @@ Brain&	Brain::operator=( const Brain& other ) {
 		for ( int i = 0; i < 100; i++ ) {
 			_ideas[i] = other._ideas[i];
 		}
-		std::cout << "Brain class Copy Assignment operator called.\n";
+		print( "Brain class Copy Assignment operator called.", PURPLE );
 	}
 
 	return *this;
@@ -55,7 +55,7 @@ Brain&	Brain::operator=( const Brain& other ) {
 /*  Brain Class destructor  */
 /*--------------------------*/
 Brain::~Brain( void ) {
-	std::cout << "Brain class Destructor called.\n";
+	print( "Brain class Destructor called.", PURPLE );
 }
 
 /*---------------------------*/
@@ -63,7 +63,7 @@ Brain::~Brain( void ) {
 /*---------------------------*/
 void	Brain::setIdea( int index, const std::string& idea ) {
 
-	if ( 0 <= index < 100 ) {
+	if ( index >= 0 && index < 100 ) {
 		_ideas[index] = idea;
 	}
 }
@@ -73,7 +73,7 @@ void	Brain::setIdea( int index, const std::string& idea ) {
 /*---------------------------*/
 std::string	Brain::getIdea( int index ) const {
 
-	if ( 0 <= index < 100 ) {
+	if ( index >= 0 && index < 100 ) {
 		return _ideas[index];
 	}
 

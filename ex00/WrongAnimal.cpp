@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 17:02:08 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/06 16:09:13 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/06 19:10:46 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,11 +58,4 @@ std::string	WrongAnimal::getType( void ) const {
 /*-----------------------------*/
 void	WrongAnimal::makeSound( void ) const {
 	print( "* Weird sound from WrongAnimal... *", B_RED );
-}
-
-/*-------------------------*/
-/*  Define print function  */
-/*-------------------------*/
-void	WrongAnimal::print( std::string message, std::string msgColor ) const {
-	std::cout << msgColor << message << RESET << std::endl;
 }
