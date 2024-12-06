@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/06 15:32:05 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/06 15:38:31 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/06 16:20:33 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,14 @@
 # include <string>
 # include <iostream>
 
+/*----------------------*/
+/*  Define Brain class  */
+/*----------------------*/
 class	Brain {
 
 private:
 
-	std::string	ideas[100];
+	std::string	_ideas[100];
 
 public:
 
