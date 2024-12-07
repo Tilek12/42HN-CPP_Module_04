@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 13:42:11 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/07 14:58:58 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/07 18:36:46 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,4 +86,11 @@ void	Character::use( int idx, ICharacter& target ) {
 	if ( idx < 4 && idx >= 0 && _inventory[idx] ) {
 		_inventory[idx]->use(target);
 	}
+}
+
+AMateria*	Character::getMateria(int idx) const {
+	if (idx >= 0 && idx < 4) {
+		return _inventory[idx];
+	}
+	return nullptr;
 }
