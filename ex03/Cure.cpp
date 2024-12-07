@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 11:34:36 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/07 11:41:51 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/07 14:04:02 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,6 @@ AMateria*	Cure::clone( void ) const {
 	return new Cure( *this );
 }
 
-// void	Cure::use( ICharacter& target ) {
-// 	std::cout << "* heals " << target.getName() << "'s wounds *" << std::endl;
-// }
+void	Cure::use( ICharacter& target ) {
+	std::cout << "* heals " << target.getName() << "'s wounds *" << std::endl;
+}

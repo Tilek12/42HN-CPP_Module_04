@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 10:40:29 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/07 12:04:26 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/07 14:03:41 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # include <string>
 # include <iostream>
-// # include "ICharacter.hpp"
+# include "ICharacter.hpp"
 
 class	AMateria {
 
@@ -32,7 +32,7 @@ public:
 
 	std::string const&	getType( void ) const;
 	virtual AMateria*	clone( void ) const = 0;
-	// virtual void		use( ICharacter& target );
+	virtual void		use( ICharacter& target );
 
 };
 

@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 11:21:00 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/07 11:27:51 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/07 14:03:53 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,6 @@ AMateria*	Ice::clone( void ) const {
 	return new Ice( *this );
 }
 
-// void	Ice::use( ICharacter& target ) {
-// 	std::cout << "* shoots an ice bolt at " << target.getName() << " *" << std::endl;
-// }
+void	Ice::use( ICharacter& target ) {
+	std::cout << "* shoots an ice bolt at " << target.getName() << " *" << std::endl;
+}

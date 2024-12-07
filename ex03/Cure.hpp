@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 11:29:18 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/07 11:33:55 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/07 14:03:59 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ public:
 	~Cure( void );
 
 	AMateria*	clone( void ) const override;
-	// void		use( ICharacter& target );
+	void		use( ICharacter& target );
 
 };
 
