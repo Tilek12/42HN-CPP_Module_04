@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 10:40:29 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/07 11:10:45 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/07 11:18:14 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ public:
 	AMateria&	operator=( const AMateria& other );
 	~AMateria( void );
 
-	std::string const&	getType() const;
-	virtual AMateria*	clone() const = 0;
+	std::string const&	getType( void ) const;
+	virtual AMateria*	clone( void ) const = 0;
 	// virtual void		use( ICharacter& target );
 
 };
