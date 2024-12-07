@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 12:19:16 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/06 17:57:02 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/07 08:54:17 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /*-------------------------*/
 /*  Cat Class constructor  */
 /*-------------------------*/
-Cat::Cat( void ) : _brain( new Brain() ) {
+Cat::Cat( void ) : AAnimal(), _brain( new Brain() ) {
 
 	_type = "Cat";
 	print( "Cat class Constructor called.", CYAN );
@@ -24,7 +24,7 @@ Cat::Cat( void ) : _brain( new Brain() ) {
 /*------------------------------*/
 /*  Cat Class copy constructor  */
 /*------------------------------*/
-Cat::Cat( const Cat& other ) : Animal( other ),
+Cat::Cat( const Cat& other ) : AAnimal( other ),
 							   _brain( new Brain( *other._brain) ) {
 	print( "Cat class Copy Constructor called.", CYAN );
 }
@@ -35,7 +35,7 @@ Cat::Cat( const Cat& other ) : Animal( other ),
 Cat&	Cat::operator=( const Cat& other ) {
 
 	if ( this != &other ) {
-		Animal::operator=( other );
+		AAnimal::operator=( other );
 		if ( _brain ) {
 			delete _brain;
 		}

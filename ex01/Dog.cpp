@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 12:02:49 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/06 16:29:23 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/07 09:10:49 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /*-------------------------*/
 /*  Dog Class constructor  */
 /*-------------------------*/
-Dog::Dog( void ) : _brain( new Brain() ) {
+Dog::Dog( void ) : Animal(), _brain( new Brain() ) {
 
 	_type = "Dog";
 	print( "Dog class Constructor called.", GREEN );

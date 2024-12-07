@@ -6,12 +6,10 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 17:17:48 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/06 19:26:17 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/07 09:04:14 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "WrongAnimal.hpp"
-#include "WrongCat.hpp"
 #include "Animal.hpp"
 #include "Dog.hpp"
 #include "Cat.hpp"

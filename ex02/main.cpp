@@ -6,13 +6,11 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 17:17:48 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/06 19:26:17 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/07 09:27:19 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "WrongAnimal.hpp"
-#include "WrongCat.hpp"
-#include "Animal.hpp"
+#include "AAnimal.hpp"
 #include "Dog.hpp"
 #include "Cat.hpp"
 
@@ -22,12 +20,8 @@ int	main( void ) {
 			  << "\n--- Tests for Animals: Dog and Cat ---\n\n"
 			  << RESET;
 
-	const Animal*	animal = new Animal();
-	const Animal*	dog = new Dog();
-	const Animal*	cat = new Cat();
-
-	std::cout << B_WHITE << animal->getType() << ": " << RESET;
-	animal->makeSound();
+	const AAnimal*	dog = new Dog();
+	const AAnimal*	cat = new Cat();
 
 	std::cout << B_WHITE << dog->getType() << ": " << RESET;
 	dog->makeSound();
@@ -35,7 +29,6 @@ int	main( void ) {
 	std::cout << B_WHITE << cat->getType() << ": " << RESET;
 	cat->makeSound();
 
-	delete animal;
 	delete dog;
 	delete cat;
 
@@ -43,7 +36,7 @@ int	main( void ) {
 			  << "\n----- Tests for array of Animals -----\n\n"
 			  << RESET;
 
-	Animal*	animals[4];
+	AAnimal*	animals[4];
 
 	for ( int i = 0; i < 2; i++ ) {
 		animals[i] = new Dog();

@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 12:19:16 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/06 17:57:02 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/07 09:10:09 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /*-------------------------*/
 /*  Cat Class constructor  */
 /*-------------------------*/
-Cat::Cat( void ) : _brain( new Brain() ) {
+Cat::Cat( void ) : Animal(), _brain( new Brain() ) {
 
 	_type = "Cat";
 	print( "Cat class Constructor called.", CYAN );

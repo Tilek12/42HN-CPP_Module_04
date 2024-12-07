@@ -6,7 +6,7 @@ RESET	= \033[0m
 # Variables
 NAME = animal
 SRC =	main.cpp \
-		Animal.cpp \
+		AAnimal.cpp \
 		Dog.cpp \
 		Cat.cpp \
 		Brain.cpp \
