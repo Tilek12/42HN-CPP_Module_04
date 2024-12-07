@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 11:34:36 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/07 14:04:02 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/07 18:06:11 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,8 @@ Cure::Cure( const Cure& other ) : AMateria( other._type ) {}
 
 Cure&	Cure::operator=( const Cure& other ) {
 
-	if ( this != &other ) {
-		_type = other._type;
-	}
-
+	( void )other;
+	std::cerr << "Assignment operator is not allowed for Cure since _type is const.\n";
 	return *this;
 }
 

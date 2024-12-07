@@ -6,7 +6,11 @@ RESET	= \033[0m
 # Variables
 NAME = interface
 SRC =	main.cpp \
-		AMateria.cpp
+		Ice.cpp \
+		Cure.cpp \
+		AMateria.cpp \
+		Character.cpp \
+		MateriaSource.cpp
 OBJ = $(SRC:.cpp=.o)
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++17

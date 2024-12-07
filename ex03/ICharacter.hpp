@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 13:26:41 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/07 13:35:53 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/07 17:24:03 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 # define ICHARACTER_HPP
 
 # include <string>
-# include "AMateria.hpp"
+
+class	AMateria;
 
 class	ICharacter {
 

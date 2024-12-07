@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 14:15:41 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/07 14:50:43 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/07 16:53:59 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,8 @@ public:
 	MateriaSource&	operator=( const MateriaSource& other );
 	~MateriaSource( void );
 
-	void	learnMateria( AMateria* m ) override;
-	AMateria* createMateria( std::string const& type ) override;
+	void		learnMateria( AMateria* m ) override;
+	AMateria*	createMateria( std::string const& type ) override;
 
 };
 
