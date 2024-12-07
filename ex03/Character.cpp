@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 13:42:11 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/07 14:04:42 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/07 14:58:58 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,26 +22,42 @@ Character::Character( const std::string& name ) : _name( name ) {
 Character::Character( const Character& other ) : _name( other._name ) {
 
 	for ( int i = 0; i < 4; i++ ) {
-		_inventory[i] = other._inventory[i] ? other._inventory[i]->clone() : nullptr;
+		_inventory[i] = nullptr;
 	}
+
+	_copyInventory( other );
 }
 
 Character&	Character::operator=( const Character& other ) {
 
 	if ( this != &other ) {
 		_name = other._name;
-		for ( int i = 0; i < 4; i++ ) {
-			_inventory[i] = other._inventory[i] ? other._inventory[i]->clone() : nullptr;
-		}
+		_clearInventory();
+		_copyInventory( other );
 	}
 
 	return *this;
 }
 
 Character::~Character( void ) {
+	_clearInventory();
+}
+
+void	Character::_clearInventory( void ) {
 
 	for ( int i = 0; i < 4; i++ ) {
 		delete _inventory[i];
+		_inventory[i] = nullptr;
+	}
+}
+
+void	Character::_copyInventory( const Character& other ) {
+
+	for ( int i = 0; i < 4; i++ ) {
+		if ( other._inventory[i] )
+			_inventory[i] = other._inventory[i]->clone();
+		else
+			_inventory[i] = nullptr;
 	}
 }
 

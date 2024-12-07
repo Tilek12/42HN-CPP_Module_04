@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 14:15:41 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/07 14:26:56 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/07 14:50:43 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,9 @@ class	MateriaSource : public IMateriaSource {
 private:
 
 	AMateria*	_memory[4];
-	void		_clearMemory( void );
-	void		_copyMemory( const MateriaSource& other );
+
+	void	_clearMemory( void );
+	void	_copyMemory( const MateriaSource& other );
 
 public:
 

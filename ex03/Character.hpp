@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 13:32:55 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/07 13:40:31 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/07 14:52:29 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,9 @@ private:
 
 	std::string	_name;
 	AMateria*	_inventory[4];
+
+	void	_clearInventory( void );
+	void	_copyInventory( const Character& other );
 
 public:
 
