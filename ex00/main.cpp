@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 17:17:48 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/06 15:18:55 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/08 11:11:50 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,9 @@
 #include "Dog.hpp"
 #include "Cat.hpp"
 
+/*-----------------*/
+/*  Main function  */
+/*-----------------*/
 int	main( void ) {
 
 	std::cout << B_BLACK

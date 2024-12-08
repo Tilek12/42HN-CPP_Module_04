@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 10:40:29 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/07 18:06:04 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/08 11:33:35 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,12 @@
 
 # include <string>
 # include <iostream>
+# include "colors.hpp"
 # include "ICharacter.hpp"
 
+/*-------------------------*/
+/*  Define AMateria class  */
+/*-------------------------*/
 class	AMateria {
 
 protected:

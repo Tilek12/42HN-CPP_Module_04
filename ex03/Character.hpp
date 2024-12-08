@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 13:32:55 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/07 18:35:57 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/08 11:14:49 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,9 @@
 # include "ICharacter.hpp"
 # include "AMateria.hpp"
 
+/*--------------------------*/
+/*  Define Character class  */
+/*--------------------------*/
 class	Character : public ICharacter {
 
 private:
@@ -37,7 +40,7 @@ public:
 	void				equip( AMateria* m ) override;
 	void				unequip( int idx ) override;
 	void				use( int idx, ICharacter& target ) override;
-	AMateria*			getMateria(int idx) const;
+	AMateria*			getMateria(int idx) const override;
 
 };
 

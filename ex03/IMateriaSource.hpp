@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 14:11:37 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/07 17:20:08 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/08 11:25:30 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,9 @@
 # include <string>
 # include "AMateria.hpp"
 
+/*-----------------------------------*/
+/*  Define IMateriaSource interface  */
+/*-----------------------------------*/
 class	IMateriaSource {
 
 	public:

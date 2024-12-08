@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 11:29:18 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/07 18:06:16 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/08 11:22:47 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,9 @@
 
 # include "AMateria.hpp"
 
+/*---------------------*/
+/*  Define Cure class  */
+/*---------------------*/
 class	Cure : public AMateria {
 
 public:

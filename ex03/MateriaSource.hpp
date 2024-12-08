@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 14:15:41 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/07 16:53:59 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/08 11:27:51 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,17 @@
 
 # include "IMateriaSource.hpp"
 
+/*------------------------------*/
+/*  Define MateriaSource class  */
+/*------------------------------*/
 class	MateriaSource : public IMateriaSource {
 
 private:
 
-	AMateria*	_memory[4];
+	AMateria*	_materias[4];
 
-	void	_clearMemory( void );
-	void	_copyMemory( const MateriaSource& other );
+	void	_clearMateria( void );
+	void	_copyMateria( const MateriaSource& other );
 
 public:
 
