@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 15:53:50 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/08 21:35:21 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/08 21:40:12 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,7 +93,7 @@ int main( void ) {
 
 	tmp = me->getMateria( 0 );
 	me->unequip( 0 ); // Unequip ice
-	delete tmp;
+	delete tmp; // Prevent memory leak since it was unequipped
 	displayInventory( me );
 
 	tmp = src->createMateria( "ice" );
