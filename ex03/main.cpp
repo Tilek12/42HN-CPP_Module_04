@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 15:53:50 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/08 21:40:12 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/09 14:51:33 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,16 +20,12 @@
 /*----------------------------------------*/
 void	displayInventory( const ICharacter* character ) {
 
-	const Character* c = dynamic_cast<const Character*>( character );
-
-	if ( !c ) return;
-
 	std::cout << B_WHITE
 			  << "Inventory of " << character->getName() << ":\n"
 			  << RESET;
 
 	for (  int i = 0; i < 4; ++i) {
-		AMateria* materia = c->getMateria( i );
+		AMateria* materia = character->getMateria( i );
 		if ( materia ) {
 			std::cout << "	Slot " << i << ": "
 					  << B_WHITE << materia->getType() << RESET << std::endl;
@@ -103,21 +99,6 @@ int main( void ) {
 	me->use( 0, *bob ); // Should shoot an ice bolt again
 
 	std::cout << B_BLACK
-			  << "\n----------- Testing Deep Copy -----------\n\n"
-			  << RESET;
-
-	std::cout << "Creating a deep copy of 'me' into 'clone'...\n";
-	Character* clone = new Character( *dynamic_cast<Character*>( me ) ); // Deep copy
-	displayInventory( clone );
-
-	std::cout << "Using Materias in clone...\n";
-	clone->use( 0, *bob ); // Should shoot an ice bolt
-	clone->use( 1, *bob ); // Should heal
-
-	std::cout << "Original inventory after cloning (should be unchanged)...\n";
-	displayInventory( me );
-
-	std::cout << B_BLACK
 			  << "\n------ Testing Inventory Overflow ------\n\n"
 			  << RESET;
 	tmp = src->createMateria( "ice" );
@@ -141,7 +122,6 @@ int main( void ) {
 			  << RESET;
 	delete bob;
 	delete me;
-	delete clone;
 	delete src;
 
 	std::cout << B_BLACK
